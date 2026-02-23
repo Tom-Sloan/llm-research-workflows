@@ -1,6 +1,11 @@
 # LLM Research Workflows
 
-Prompts and methodology for using Claude API and OpenClaw to do literature review and generate research reports. I built this for sensor evaluation work at SAM3 (elderly health monitoring), but the approach works for any technical research.
+Prompts and methodology for using Claude API and OpenClaw to do research and generate reports. Two main use cases:
+
+1. **Technical research** - Literature review, sensor evaluation, technology comparison
+2. **Company research** - Interview prep, competitive intelligence, founder/investor mapping
+
+I built the technical prompts for sensor evaluation work at SAM3 (elderly health monitoring). The company research prompt came from job interview prep.
 
 ## What this does
 
@@ -39,13 +44,18 @@ You give the agent a research question. It searches academic sources, pulls find
 
 ## Prompts
 
-- [`prompts/research-agent.md`](prompts/research-agent.md) - System prompt
+**Technical research:**
+- [`prompts/research-agent.md`](prompts/research-agent.md) - System prompt for technical research
 - [`prompts/literature-synthesis.md`](prompts/literature-synthesis.md) - How to combine sources
 - [`prompts/report-generation.md`](prompts/report-generation.md) - Report formatting
 
-## Example
+**Company research:**
+- [`prompts/company-research.md`](prompts/company-research.md) - Full company one-pager prompt
 
-[`examples/sensor-evaluation-report.md`](examples/sensor-evaluation-report.md) - UTI detection sensor evaluation for the envisAGE project
+## Examples
+
+- [`examples/sensor-evaluation-report.md`](examples/sensor-evaluation-report.md) - UTI detection sensor evaluation for envisAGE project
+- [`examples/company-research-giatec.md`](examples/company-research-giatec.md) - Company one-pager for job interview prep
 
 ## How I approach prompts
 
@@ -55,10 +65,16 @@ The main failure mode is hallucinated references. Always verify citations exist 
 
 ## When this is useful
 
+**Technical research:**
 - Evaluating sensors or components for a project
 - Surveying what's out there before writing a grant
-- Competitive analysis
 - Getting up to speed on an unfamiliar domain
+
+**Company research:**
+- Preparing for job interviews
+- Competitive intelligence
+- Investor/founder network mapping
+- Generating interview questions that aren't boring
 
 ## Author
 
