@@ -55,7 +55,6 @@ You give the agent a research question. It searches academic sources, pulls find
 ## Examples
 
 - [`examples/sensor-evaluation-report.md`](examples/sensor-evaluation-report.md) - UTI detection sensor evaluation for envisAGE project
-- [`examples/company-research-giatec.md`](examples/company-research-giatec.md) - Company one-pager for job interview prep
 
 ## How I approach prompts
 
